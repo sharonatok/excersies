@@ -1,0 +1,36 @@
+
+#card {
+  background-color:rgba(255, 252, 205, 0.562);
+  width: 500px;
+  height: 170px; 
+  box-shadow: rgba(0, 0, 0, 0.35) 10px 20px 50px;
+}
+body {
+  width: 600px;  
+  margin-top: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+img {
+  object-fit:fill;
+  object-position: 100% 0;
+  width: 500px;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 10px 20px 50px;
+  
+}
+#places {
+    color:rgb(182, 163, 57);
+    font-size: 20px;
+    font-weight:100;
+}
+#places span {
+    text-decoration:underline ;
+}
+#card, #places {
+padding: 1px
+}
+
+
+

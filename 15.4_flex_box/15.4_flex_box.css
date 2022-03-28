@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: beige;
+    height: 20vw;
+    width: 80vh;
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.item{
+    height: 7rem;
+    padding: 0 7rem 0 0;  
+}
+.item-1 {
+    background-color: green;
+}
+.item-2 {
+    background-color: blue;
+}
+.item-3 {
+    background-color: red;
+}

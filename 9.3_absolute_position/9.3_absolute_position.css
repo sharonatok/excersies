@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+#div_one {
+    font-size: 20px;
+    width: 400px;
+    height: 300px;
+    border: 3px black solid;
+    background-color: aqua;
+    position: absolute;
+    margin: 50px;
+    z-index: 1;
+}
+#div_two {
+    font-size: 20px;
+    width: 300px;
+    height: 500px;
+    border: 5px black solid;
+    background-color:blue;
+    position: absolute;
+    margin: 200px 0 0 270px;
+    z-index: 2;    
+}
+#div_three {
+    font-size: 20px;
+    width: 900px;
+    height: 200px;
+    border: 3px black solid;
+    background-color:yellow;
+    position: absolute;
+    margin: 500px 0 0 50px;
+    z-index: 3;
+}
+#div_four {
+    font-size: 20px;
+    width: 200px;
+    height: 800px;
+    border: 3px black solid;
+    background-color:green;
+    position: absolute;
+    margin: 50px 0 0 700px;
+    z-index: 4;   
+}

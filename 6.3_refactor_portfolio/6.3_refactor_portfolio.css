@@ -1,0 +1,47 @@
+body {
+    background-image:url(./canstockphoto93591736.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Ranga', cursive;
+}
+img {
+    border-width: 1px;
+    border-color: aqua;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: #fff 20px 50px 80px;
+}
+.card2 {
+    color: aqua;
+}
+.card {
+    COLOR: aqua;
+    border-width: 3px;
+    border-color: rgb(0, 252, 239);
+    border-style:dashed;
+    background-color: rgb(6, 73, 117); 
+    width: 150px;
+    height: 170px;
+    padding: 20px;
+    margin-bottom: 10px;
+}     
+.card2 {
+    border: blueviolet;
+    /* background-color: yellow; */
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.card1 {
+    font-size: 24px;
+    COLOR: aqua;
+    border-width: 3px;
+    border-color: rgb(1, 197, 204);
+    border-style:double;
+    background-color: rgb(2, 19, 77); 
+    width: 140px;
+    height: 160px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+   
