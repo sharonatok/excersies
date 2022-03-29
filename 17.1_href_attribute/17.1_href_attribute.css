@@ -1,0 +1,14 @@
+
+div {
+    color:blueviolet;
+    font-size: 50px;
+    text-align: center;
+    margin-top:100px ;
+    
+}
+a{
+    text-decoration: none;
+}
+a:after {
+    content: "(www.google.com)";
+}
