@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    position: relative;
+    top: 500px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.buttons {
+    position: relative;
+    background-color:#FFF;  
+    padding: 25px 40px;       
+}
+.Rotate {
+    position: relative;
+}
+.Rotate:before {
+    content: "YEAH!";
+    position: absolute;
+    visibility: hidden;
+background-color: red;
+
+right: 0.5px;
+bottom: 65px;
+
+}
+
+.Rotate:hover::before {
+    visibility:visible;
+    animation-name:YEAH;
+    animation-duration: 1s;
+/* }
+@keyframes YEAH{
+    100% {
+        background-color: blueviolet;
+        top: 5px;
+    } */
+ 
+    
+}
+.Translate {
+    position: relative;
+    left:100px;
+}
+.TranslateY {
+    position: relative;
+    left:200px;
+    transition-property: color;
+    transform: all 3s ease-in-out;
+    
+}
+.TranslateY:hover::before {
+    content: "YEAH!";
+    position: absolute;
+    transform: translateY(-25px);
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    left: 0.5px;
+}
+.Scale_AND_Opacity {
+    position: relative;
+    top: 150PX;
+    right: 200px;
+}

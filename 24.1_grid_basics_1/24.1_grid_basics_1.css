@@ -1,0 +1,39 @@
+
+.container {
+    display: grid;
+    grid-gap: 1rem; 
+}
+.item { 
+    padding: 2rem;
+    border-radius: 15px;
+    grid-template-columns: auto; 
+}
+.row1 {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-gap: 1rem;
+}
+.row2 {
+    display: grid;
+    grid-template-columns: 250px 750px;
+    grid-gap: 1rem;
+}
+.row3 {
+    display: grid;
+    grid-template-columns: 1020px;  
+}
+.item1 {
+    background-color: red;
+}
+.item2 {
+    background-color: blue;
+}
+.item3 {
+    background-color: green;    
+}
+.item4 {
+    background-color: purple; 
+}
+.item5 {
+    background-color: yellow;   
+}
