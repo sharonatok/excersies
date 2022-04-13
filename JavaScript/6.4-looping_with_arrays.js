@@ -15,3 +15,8 @@
 // 7. Return from the function the ‘percentages’ array.
 
 populations = [ 9000000, 40000000, 15000000, 80000000]
+const populationPercentages = (populations) =>{
+    percentages = [];
+    for (let i = 0, i < populations.length, i++ )
+}
+
