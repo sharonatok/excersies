@@ -15,6 +15,22 @@
 // thing, called 'percentageOfWorld2', and also call it with 3
 // country populations (can be the same populations)
 
-const percentageOfWorld1 = (population){
-    
+const  theWorldPopulation = 7900000000;
+const percentageOfWorld1 = (population) => {
+    return (population / theWorldPopulation * 100); 
 }
+
+const ChinaPopulation = 1441000000;
+const IsraelPopulation = 9000000;
+const UnitedStatesPopulation = 329500000;
+
+
+console.log(percentageOfWorld1(ChinaPopulation).toFixed(2));
+console.log(percentageOfWorld1(IsraelPopulation).toFixed(2));
+console.log(percentageOfWorld1(UnitedStatesPopulation).toFixed(2));
+ 
+const percentageOfWorld2 = (population) => (population / theWorldPopulation * 100); 
+
+console.log(percentageOfWorld2(ChinaPopulation).toFixed(2));
+console.log(percentageOfWorld2(IsraelPopulation).toFixed(2));
+console.log(percentageOfWorld2(UnitedStatesPopulation).toFixed(2));

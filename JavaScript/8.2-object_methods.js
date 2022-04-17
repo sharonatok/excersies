@@ -26,4 +26,6 @@ const mycountry = {
         "Greece"
     ],
 }
-mycountry
+// 2.
+mycountry{
+    const describe = 

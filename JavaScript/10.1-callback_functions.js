@@ -19,29 +19,28 @@
 
 
 // 1.
-const callback = (str) => {
-    console.log(str);
+const callbackString = (string) => {
+    console.log(string);
   };
 
 const isString = (str , callback) => {
-if ("string" === typeof str) {
+if ( typeof str === "string") {
     callback(str);
 }
 };
-isString ("good morning", callback)
+isString ("good morning", callbackString)
 
 // 2.
 const callBackFunc = (newStr) => {
-    console.log(newStr.split(' ').join("-"));
+   return newStr.split(' ').join("-");
 }
 
 const firstWordUpperCase = (str1, callBackFunc) => {
-    const upper = str1.split("");
-    (callBackFunc.toUpperCase()).join("");
-    
-    
-}
-firstWordUpperCase("have a good day", callBackFunc)
+    const upper = str1.split(" ");
+    upper[0]= upper[0].toUpperCase();
+    return callBackFunc(upper.join(" "));    
+};
+console.log(firstWordUpperCase("have a good day", callBackFunc));
 
 
 // const makeDashes = (str2) => {
@@ -55,3 +54,21 @@ firstWordUpperCase("have a good day", callBackFunc)
 //   console.log(
 //      firstWordUpperCase('hellow to you, have a nice day')
 //    );
+
+// 3.1
+// const reverse = (str) => {
+//     return;
+// };
+// console.log (
+//     firstWordUpperCase( "have a good day", (str) => str.replaceAll(" ", "$")
+//     );
+
+// // 4.
+const callback = (str1, str2) =>{
+    console.log (str1 + str2);
+
+}
+
+const good = (callback) => {
+    return callBack("good evening", "my dear"); 
+}
