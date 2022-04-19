@@ -15,9 +15,6 @@
 // 4. Create your own function that will receive from one of its
 // arguments a callback function.
 
-
-
-
 // 1.
 const callbackString = (string) => {
     console.log(string);
@@ -35,40 +32,25 @@ const callBackFunc = (newStr) => {
    return newStr.split(' ').join("-");
 }
 
-const firstWordUpperCase = (str1, callBackFunc) => {
+const firstWordUpperCase = (str1, callBackFunc1) => {
     const upper = str1.split(" ");
     upper[0]= upper[0].toUpperCase();
     return callBackFunc(upper.join(" "));    
 };
+// 3.
 console.log(firstWordUpperCase("have a good day", callBackFunc));
 
+// 4.
+const str1 = "good morning ";
+const str2 = "have a good day";
 
-// const makeDashes = (str2) => {
-//     console.log(str2.split(" ").join("-"));
-//   };
-  
-//   const firstWordUpperCase = (str2, func2) => {
-//     const [first, ...rest] = str2.split("");
-//     func2([first.toUpperCase(), ...rest].join(""));
-//   };
-//   console.log(
-//      firstWordUpperCase('hellow to you, have a nice day')
-//    );
-
-// 3.1
-// const reverse = (str) => {
-//     return;
-// };
-// console.log (
-//     firstWordUpperCase( "have a good day", (str) => str.replaceAll(" ", "$")
-//     );
-
-// // 4.
-const callback = (str1, str2) =>{
-    console.log (str1 + str2);
+const callback2 = (str, anotherStr) =>{
+    console.log (str + anotherStr);
 
 }
 
 const good = (callback) => {
-    return callBack("good evening", "my dear"); 
+    return callback; 
 }
+
+console.log(good(callback2(str1,str2)));

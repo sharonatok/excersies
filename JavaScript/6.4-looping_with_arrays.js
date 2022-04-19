@@ -14,9 +14,19 @@
 // 6. Push the result to the ‘percentages’ array.
 // 7. Return from the function the ‘percentages’ array.
 
-populations = [ 9000000, 40000000, 15000000, 80000000]
-const populationPercentages = (populations) =>{
-    percentages = [];
-    for (let i = 0, i < populations.length, i++ )
+const  theWorldPopulation = 7900000000;
+const percentageOfWorld1 = (population) => {
+    return (population / theWorldPopulation * 100).toFixed(2); 
 }
+
+let populations = [9000000, 40000000, 15000000, 80000000];
+const populationPercentages = (arr) =>{
+    const percentages = [];
+    for (let i = 0; i < populations.length; i++) {
+    percentages.push(percentageOfWorld1(arr[i]));
+}
+return percentages; 
+};
+console.log(populationPercentages(populations));
+
 

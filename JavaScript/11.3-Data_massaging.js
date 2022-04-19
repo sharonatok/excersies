@@ -68,3 +68,41 @@
     },
     },
    ];
+
+   // 1.
+
+   const allNames = (arr) => {
+      return arr.map((obj) => obj.name)
+   }
+   console.log(allNames(data))
+
+   // 2.
+   const bornBefore90 = (arr) => {
+      return arr.filter((obj) => obj.birthday.split("-")[2] < 1990);
+   }
+   console.log(bornBefore90(data))
+
+   // 3.
+
+   const differentFoods = (arr) => {
+      const result = {};
+      arr.forEach((obj) => {
+        obj.favoriteFoods.meats.forEach((meal) => {
+          if (result[meal]) {
+            result[meal] += 1;
+          } else {
+            result[meal] = 1;
+          }
+        });
+        obj.favoriteFoods.fish.forEach((meal) => {
+          if (result[meal]) {
+            result[meal] += 1;
+          } else {
+            result[meal] = 1;
+          }
+        });
+      });
+      return result;
+    };
+    
+    console.log(differentFoods(data));

@@ -25,7 +25,26 @@ const mycountry = {
         "Cyprus",
         "Greece"
     ],
-}
-// 2.
-mycountry{
-    const describe = 
+    // 2.
+    describe() {
+        console.log(`${this.country} has ${this.population} people, their mother tongue is ${this.language}, they have ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`);
+    }, 
+    // 4.
+    // checkIsland() {
+    //     mycountry["isIsland"] = this.neighbours.length ? false : true;
+    // },
+};
+
+// 3.
+
+mycountry.describe()
+
+// 4. 
+mycountry.checkIsland = function () {
+    this.isIsland = this.neighbours.length === 0;
+  };
+
+
+console.log(mycountry.isIsland);
+mycountry.checkIsland();
+console.log(mycountry.isIsland);
