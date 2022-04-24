@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" /
+>
+ <meta name="viewport" content="width=device-width,
+initial-scale=1.0" />
+ <title>Document</title>
+ </head>
+ <body>
+ <h1>Header</h1>
+ <p>Paragraph</p>
+ <a href="#">link</a>
+ <img src="" alt="" />
+ <div class="x">Div with a class</div>
+ <div id="y">Div with an id</div>
+ <input type="text" />
+ <input type="text" />
+ <input type="text" />
+ </body>
+ <script>
+ //your js code here
+
+//  1.
+ const h1Element = document.getElementsByTagName("h1");
+ const pElement = document.getElementsByTagName("p");
+ const aElement = document.getElementsByTagName("a");
+ const imgElement = document.getElementsByTagName("img");
+ const xElement = document.getElementsByClassName("x");
+ const yElement = document.getElementById("y");
+ const inputElement = document.getElementsByTagName( "input")
+ console.log(h1Element);
+ console.log(pElement);
+ console.log(aElement); 
+ console.log(imgElement); 
+ console.log(xElement); 
+ console.log(yElement);
+ console.log(inputElement);
+
+//  2
+const h1Element2 = document.querySelector("h1");
+ const pElement2 = document.querySelector("p");
+ const aElement2 = document.querySelector("a");
+ const imgElement2 = document.querySelector("img");
+ const xElement2 = document.querySelector(".x");
+ const yElement2 = document.querySelector("#y");
+ const inputElement2 = document.querySelector( "input");
+ console.dir(h1Element2);
+ console.dir(pElement2);
+ console.dir(aElement2); 
+ console.dir(imgElement2); 
+ console.dir(xElement2); 
+ console.dir(yElement2);
+ console.dir(inputElement2);
+
+// 3.
+
+const inputs = document.querySelectorAll("input");
+inputs.forEach((element) => console.dir(element));
+
+ </script>
+</html>
