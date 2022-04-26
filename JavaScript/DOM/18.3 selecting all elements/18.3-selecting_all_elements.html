@@ -31,7 +31,7 @@ with giving them different names? -->
     <title>Document</title>
 </head>
 <body>
-    <div id="myFirstDiv"></div>
+    <div id="myFirstDiv"></div>21.2-font-size.js.
 <div id="mySecondDiv"></div>
 <div id="myThridDiv"></div>
 <div id="myFourthDiv"></div>
@@ -39,12 +39,14 @@ with giving them different names? -->
 <script>
 
 const allDivs = document.querySelectorAll('div');
-for(let i=0; i < allDivs.length; i++){
-    for(let j=0; j < allDivs; j++){
-        console.log(`${[j]div:} ${allDivs[i]}`);
-    }
-}
-// console.log(allDivs);
+const [myFirstDiv, mySecondDiv, myThirdDiv, myFourthDiv] = [...divs];
+
+// for(let i=0; i < allDivs.length; i++){
+//     for(let j=0; j < allDivs; j++){
+//         console.log(`${[j]div:} ${allDivs[i]}`);
+//     }
+
+console.log(allDivs);
 
 // const myFirstDiv = document.getElementsByTagName('div')[0];
 // const mySecondDiv = document.getElementsByTagName('div')[1];

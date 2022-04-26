@@ -17,7 +17,7 @@ const boom = (n) => {
     for (i = 0; i <= n; i++){
         if (i % 7 === 0){
             result+= "BOOM";
-        } else if ((i % 7 === 0) && i.includes("7")){
+        } else if ((i % 7 === 0) && i.includes(7)){
             result+= "BOOMBOOM";
         }else {
             result+= i;
@@ -28,4 +28,4 @@ const boom = (n) => {
     }
     console.log(result)
 }
-console.log(boom(18));
+console.log(boom(77));
