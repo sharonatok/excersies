@@ -11,12 +11,14 @@
 
 const submit = document.querySelector("button");
 const input = document.querySelector("input");
+const smilesDiv = document.querySelector('.smiles-container');
 
 
 const message = document.createElement("h2");
 message.innerText = "error!!! please enter a number";
 
 submit.addEventListener("click", function() {
+    smilesDiv.innerHTML = '';
     let number = Number(input.value);
     if (isNaN(number)) {
         document.body.appendChild(message);
@@ -25,7 +27,7 @@ submit.addEventListener("click", function() {
     for (let i = 0; i < number; i++) {
     const smiley = document.createElement("img");
     smiley.src = "./png_smiley_91659.png";
-    smiley.style.width = "30px";
+    smiley.style.width = "30px";3
     smiley.style.height = "30px";
     document.body.appendChild(smiley);
 };
