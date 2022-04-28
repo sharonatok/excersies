@@ -9,63 +9,25 @@
 // change information, give him the possibility to change the information and ask
 // again for his confirmation
 
-// const btn = document.querySelector("button");
-// const formData = {};
-
-// for(let input of class) {
-// input.addEventListener(input, (e) =>{
-//   formData[e.target.name] = e.target.value;
-// })
-// }
-// btn.addEventListener("submit", function(){
-//     e.preventDefault();
-//     ptompt("check your data please")
-
-// });
 
 
-// let person = prompt("Please enter your name", "Harry Potter");
+const data = document.querySelectorAll("input");
+const btn = document.querySelector("button");
 
-// if (person != null) {
-//   document.getElementById("demo").innerHTML =
-//   "Hello " + person + "! How are you today?";
-// }
+btn.addEventListener("click", function (e) {
+  let confirmMsg = "";
+  let text = "check your data please : \n";
 
-const form = document.querySelector("form");
-const name1 = document.querySelector("#name");
-const age = document.querySelector("#age");
-const email = document.querySelector("#email");
+  for (let input of data) {
+    text += input.value;
+    text += "\n";
+  }
 
-const confirmation = document.createElement("div");
-confirmation.classList.add("confirmation");
+  if (confirm(text)) {
+    confirmMsg = "Congratulations you successfully sent this form!";
+  } 
 
-const btnConfirm = document.createElement("button");
-btnConfirm.innerText = "confirm";
-const btnChange = document.createElement("button");
-btnChange.innerText = "change";
-
-const h3 = document.createElement("h3");
-h3.innerText = "congratulations you successfully sent this form";
-
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    confirmation.innerText = 
-    `name: ${name1.value}
-    age: ${age.value}
-    email: ${email.value}
-    `;
-    form.style.display = "none";
-    document.body.appendChild(confirmation);
-    confirmation.append(btnConfirm);
-    confirmation.append(btnChange);
-})
-
-btnConfirm.addEventListener("click", () => {
-    document.body.appendChild(h3);
-})
-
-btnChange.addEventListener("click", () => {
-    confirmation.remove();
-    h3.remove();
-    form.style.display = "flex";
-})
+  const msg = document.createElement("p");
+  msg.innerText = confirmMsg;
+  btn.parentElement.appendChild(msg);
+});

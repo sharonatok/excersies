@@ -7,15 +7,9 @@
 
 const checkbox = document.querySelector("input");
 // const body = document.querySelector("body");
-const image = document.createElement("img");
-image.src = "./png_smiley_91659.png";
-image.style.width = "20px";
-image.style.height = "20px";
+const image = document.querySelector("img");
 
 
-checkbox.addEventListener("checked", (e) => {
-    if(e.target.checked){
-        console.log(e.target.checked);
-        document.body.appendChild(image);
-    }
-})
+checkbox.addEventListener("checked", () => {
+    image.classList.toggle("appear");
+});
