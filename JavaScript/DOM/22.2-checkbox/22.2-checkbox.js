@@ -9,7 +9,6 @@ const checkbox = document.querySelector("input");
 // const body = document.querySelector("body");
 const image = document.querySelector("img");
 
-
 checkbox.addEventListener("checked", () => {
-    image.classList.toggle("appear");
+  image.classList.toggle("appear");
 });
